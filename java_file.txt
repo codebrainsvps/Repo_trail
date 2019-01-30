@@ -1,1 +1,34 @@
-gdgfdf
+package com.codebrains.basics.strings;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+/**
+ *
+ * @author shiva
+ */
+public class CapitalizeFirstLeter{
+    public static void main(String a[])
+    {
+        Scanner scan=new Scanner(System.in);
+       System.out.println("Nter a statement"); 
+      String result1="";
+      //StringBuilder result2=new StringBuilder("");
+       String st=scan.nextLine();
+        StringTokenizer stk=new StringTokenizer(st);
+        while(stk.hasMoreTokens())
+        {
+            String tok=stk.nextToken();
+            result1=result1+tok.substring(0,1).toUpperCase()+tok.substring(1)+" ";
+      //    result2.append(tok.substring(0,1).toUpperCase()).append(tok.substring(1)).append(" ");
+  
+        //the below code is for last letter as capital
+      //result2.append(tok.substring(0,len-1)).append(tok.substring(len-1).toUpperCase()).append(" ");        
+        }
+        System.out.println(result1.toString());
+       // System.out.println(result2.toString());
+
+
+        System.out.println(result1.toString());
+    }
+}
+
+
