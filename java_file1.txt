@@ -1,1 +1,37 @@
-hhsdhj
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.codebrains.exception;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author shiva
+ */
+public class ExceptionDemo {
+
+    public static void main(String at[]) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ngter two values");
+        
+            int x = scan.nextInt();
+            int y = scan.nextInt();
+            int res;
+            res = x + y;
+            System.out.println("Addition is " + res);
+            try {
+                res = x / y;
+                System.out.println("Division is " + res);
+            } catch (ArithmeticException aie) {
+                System.out.println("Pls dont give 0 for second value");
+            }
+
+            res = x - y;
+            System.out.println("Subtraction is " + res);
+
+           
+    }
+}
