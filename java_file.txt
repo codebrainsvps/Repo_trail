@@ -27,7 +27,7 @@ public class CapitalizeFirstLeter{
        // System.out.println(result2.toString());
 
 
-        System.out.println(result1.toString());
+        //System.out.println(result1.toString());
     }
 }
 
