@@ -6,10 +6,10 @@ package com.codebrains.exception;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
+//**
  *
  * @author shiva
- */
+ *//
 public class ExceptionDemo {
 
     public static void main(String at[]) {
